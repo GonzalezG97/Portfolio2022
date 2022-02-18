@@ -11,12 +11,11 @@ function AboutMe() {
                 About Me
             </Typography>
             <Typography variant="body1" component="p">
-                Hello and welcome to my website! I am new to web development and created
-                this to show off my projects and new skills. I worked in customer
-                support for many big names in tech. I hope to use my ability to
+                Welcome! I am a graduate from the UTSA Full Stack Program, here you will see some of my newest projects to show off my skills. I've worked customer
+                support for Apple, Facebook and others. I hope to use my ability to
                 understand how the average customer thinks to the development side.
                 Armed with this knowledge I plan to build applications and websites with
-                the most common user issues in mind to help minimize user error.
+                the user in mind to make sure its easy to read and use.
             </Typography>
             </Container>                
         </div>
