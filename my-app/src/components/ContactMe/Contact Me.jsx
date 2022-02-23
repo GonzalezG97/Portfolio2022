@@ -2,6 +2,10 @@ import React from "react";
 import Typography from "@mui/material/Typography";
 import Container from '@mui/material/Container';
 import Grid from "@mui/material/Grid";
+import Box from '@mui/material/Box';
+import Button from '@mui/material/Button';
+import TextField from '@mui/material/TextField';
+import { CardContent, Card } from "@mui/material";
 
 
 
@@ -14,7 +18,7 @@ function ContactMe() {
             </Typography>
             </Container> 
             <Container>
-            <Grid item sm={3}>
+                <Grid item sm={3}>
             <div>
               <Typography variant="h5" component="p">
                 gustavoshadow13@gmail.com
@@ -34,7 +38,14 @@ function ContactMe() {
                 </Typography>
               </a>
             </div>
-          </Grid>
+                </Grid>
+            <Card>
+                <CardContent>
+                    <Grid>
+                    </Grid>
+                    </CardContent>
+                <CardContent/>
+            </Card>
             </Container>               
         </div>
     );
