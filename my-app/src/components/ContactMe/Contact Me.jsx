@@ -64,6 +64,7 @@ function ContactMe() {
                         <TextField
                             fullWidth
                             required
+                            type="number"
                             id="outlined-required"
                             label="Phone Number"
                             defaultValue=""
@@ -73,6 +74,7 @@ function ContactMe() {
                         <TextField
                             fullWidth
                             required
+                            type="email"
                             id="outlined-password-input"
                             label="Email"
                             defaultValue=""
@@ -88,6 +90,11 @@ function ContactMe() {
                             defaultValue=""
                             variant="standard"
                             />
+                        </Grid>
+                        <Grid item>
+                            <Button type="submit" variant="contained" fullWidth>
+                                Submit
+                            </Button>
                         </Grid>
                     </Grid>
                     </CardContent>
