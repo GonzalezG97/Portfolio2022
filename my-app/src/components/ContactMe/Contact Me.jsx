@@ -47,7 +47,16 @@ function ContactMe() {
                             fullWidth
                             required
                             id="outlined-required"
-                            label="First"
+                            label="First Name"
+                            defaultValue=""
+                            />
+                        </Grid>
+                        <Grid item>
+                        <TextField
+                            fullWidth
+                            required
+                            id="outlined-required"
+                            label="Last Name"
                             defaultValue=""
                             />
                         </Grid>
