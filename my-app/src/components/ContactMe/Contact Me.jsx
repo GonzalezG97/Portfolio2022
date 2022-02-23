@@ -78,6 +78,17 @@ function ContactMe() {
                             defaultValue=""
                             />
                         </Grid>
+                        <Grid item>
+                        <TextField
+                            fullWidth
+                            id="standard-multiline-static"
+                            label="Message"
+                            multiline
+                            rows={4}
+                            defaultValue=""
+                            variant="standard"
+                            />
+                        </Grid>
                     </Grid>
                     </CardContent>
                 <CardContent/>
