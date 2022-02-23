@@ -60,6 +60,15 @@ function ContactMe() {
                             defaultValue=""
                             />
                         </Grid>
+                        <Grid item>
+                        <TextField
+                            fullWidth
+                            required
+                            id="outlined-password-input"
+                            label="Email"
+                            defaultValue=""
+                            />
+                        </Grid>
                     </Grid>
                     </CardContent>
                 <CardContent/>
