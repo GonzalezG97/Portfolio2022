@@ -41,7 +41,16 @@ function ContactMe() {
                 </Grid>
             <Card>
                 <CardContent>
-                    <Grid>
+                    <Grid container spacing={1}>
+                        <Grid item>
+                        <TextField
+                            fullWidth
+                            required
+                            id="outlined-required"
+                            label="First"
+                            defaultValue=""
+                            />
+                        </Grid>
                     </Grid>
                     </CardContent>
                 <CardContent/>
