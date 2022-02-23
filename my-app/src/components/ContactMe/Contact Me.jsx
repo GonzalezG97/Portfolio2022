@@ -10,6 +10,9 @@ import { CardContent, Card } from "@mui/material";
 
 
 function ContactMe() {
+
+    const submitForm = () => {};
+
     return (
         <div>
             <Container maxWidth="xlg">
@@ -41,6 +44,7 @@ function ContactMe() {
                 </Grid>
             <Card>
                 <CardContent>
+                    <form onSubmit={submitForm}>
                     <Grid container spacing={1}>
                         <Grid item>
                         <TextField
@@ -54,8 +58,6 @@ function ContactMe() {
                         <Grid item>
                         <TextField
                             fullWidth
-                            required
-                            id="outlined-required"
                             label="Last Name"
                             defaultValue=""
                             />
@@ -97,6 +99,7 @@ function ContactMe() {
                             </Button>
                         </Grid>
                     </Grid>
+                    </form>
                     </CardContent>
                 <CardContent/>
             </Card>
