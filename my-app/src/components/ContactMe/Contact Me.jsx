@@ -6,19 +6,17 @@ import Button from '@mui/material/Button';
 import TextField from '@mui/material/TextField';
 import { CardContent, Card } from "@mui/material";
 import axios from 'axios';
-import { useFormspark } from "@formspark/use-formspark";
 
 
 function ContactMe() {
 
     const formId = process.env.REACT_APP_FORM_ID;
-    const formSparkUrl = 'https://submit-form.com/${formId}';
+    const formSparkUrl = `https://submit-form.com/${formId}`;
 
     const OnSubmit = async (e) => {
         e.preventDefault();
-        console.log(messageState);
-        axios.post('https://submit-form.com/li1ekV7o', {messageState})
-        .then(res => console.log(res));
+        axios.post(formSparkUrl, {messageState})
+        .then(err => console.log(err));
     };
 
     const [messageState, setMessageState] = useState({
@@ -28,9 +26,6 @@ function ContactMe() {
         email:'',
         message: '',
     })
-
-    axios.post('https://submit-form.com/li1ekV7o', {messageState})
-        .then(res => console.log(res))
 
     return (
         <div>
@@ -72,6 +67,7 @@ function ContactMe() {
                         <TextField
                             fullWidth
                             required
+                            type="text"
                             id="outlined-required"
                             label="First Name"
                             defaultValue=""
