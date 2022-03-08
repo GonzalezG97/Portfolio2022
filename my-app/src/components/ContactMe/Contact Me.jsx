@@ -5,6 +5,7 @@ import Grid from "@mui/material/Grid";
 import Button from '@mui/material/Button';
 import TextField from '@mui/material/TextField';
 import { CardContent, Card } from "@mui/material";
+import axios from 'axios';
 import { useFormspark } from "@formspark/use-formspark";
 
 
@@ -15,7 +16,9 @@ function ContactMe() {
 
     const OnSubmit = async (e) => {
         e.preventDefault();
-        console.log(messageState)
+        console.log(messageState);
+        axios.post('https://submit-form.com/li1ekV7o', {messageState})
+        .then(res => console.log(res));
     };
 
     const [messageState, setMessageState] = useState({
@@ -25,6 +28,9 @@ function ContactMe() {
         email:'',
         message: '',
     })
+
+    axios.post('https://submit-form.com/li1ekV7o', {messageState})
+        .then(res => console.log(res))
 
     return (
         <div>
