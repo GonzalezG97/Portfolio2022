@@ -15,7 +15,16 @@ function ContactMe() {
 
     const OnSubmit = async (e) => {
         e.preventDefault();
+        console.log(messageState)
     };
+
+    const [messageState, setMessageState] = useState({
+        firstName: '',
+        lastName: '',
+        phoneNumber: '',
+        email:'',
+        message: '',
+    })
 
     return (
         <div>
@@ -60,9 +69,8 @@ function ContactMe() {
                             id="outlined-required"
                             label="First Name"
                             defaultValue=""
-                            for="first name">
-                                
-                            </TextField>
+                            onChange={(e) => setMessageState({...messageState, firstName: e.target.value})}
+                            />
                             
                         </Grid>
                         <Grid item>
@@ -70,6 +78,7 @@ function ContactMe() {
                             fullWidth
                             label="Last Name"
                             defaultValue=""
+                            onChange={(e) => setMessageState({...messageState, lastName: e.target.value})}
                             />
                         </Grid>
                         <Grid item>
@@ -80,6 +89,7 @@ function ContactMe() {
                             id="outlined-required"
                             label="Phone Number"
                             defaultValue=""
+                            onChange={(e) => setMessageState({...messageState, phoneNumber: e.target.value})}
                             />
                         </Grid>
                         <Grid item>
@@ -90,6 +100,7 @@ function ContactMe() {
                             id="outlined-password-input"
                             label="Email"
                             defaultValue=""
+                            onChange={(e) => setMessageState({...messageState, email: e.target.value})}
                             />
                         </Grid>
                         <Grid item>
@@ -101,6 +112,7 @@ function ContactMe() {
                             rows={4}
                             defaultValue=""
                             variant="standard"
+                            onChange={(e) => setMessageState({...messageState, message: e.target.value})}
                             />
                         </Grid>
                         <Grid item>
