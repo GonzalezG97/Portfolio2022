@@ -11,7 +11,12 @@ import { CardContent, Card } from "@mui/material";
 
 function ContactMe() {
 
-    const submitForm = () => {};
+    const formId = process.env.REACT_APP_FORM_ID;
+    const formSparkUrl = 'https://submit-form.com/${formId}';
+
+    const submitForm = async (e) => {
+        e.preventDefault();
+    };
 
     return (
         <div>
