@@ -10,6 +10,7 @@ import Grid from "@mui/material/Grid";
 export default function Portoflio() {
   return (
     <Grid container justifyContent="center" spacing={2}>
+        {/* Wandering Adventure */}
       <Grid item>
         <Card sx={{ maxWidth: 345 }}>
           <CardMedia
@@ -19,7 +20,7 @@ export default function Portoflio() {
           />
           <CardContent>
             <Typography gutterBottom variant="h5" component="div">
-              Wanderting Adventure
+              Wandering Adventure
             </Typography>
             <Typography variant="body2" color="text.secondary">
               A text adventure game that will truly test your skill. Can you
@@ -52,21 +53,20 @@ export default function Portoflio() {
           </CardActions>
         </Card>
       </Grid>
+      {/* WeebHub */}
       <Grid item>
         <Card sx={{ maxWidth: 345 }}>
           <CardMedia
             component="img"
-            alt="green iguana"
-            height="140"
-            image="/static/images/cards/contemplative-reptile.jpg"
+            alt="WeebHub"
+            image="https://live.staticflickr.com/65535/51182543595_62f2a2393b_c.jpg"
           />
           <CardContent>
             <Typography gutterBottom variant="h5" component="div">
-              Lizard
+              WeebHub
             </Typography>
             <Typography variant="body2" color="text.secondary">
-              Lizards are a widespread group of squamate reptiles, with over
-              6,000 species, ranging across all continents except Antarctica
+              A place where you can discuss your favorite animes. 
             </Typography>
           </CardContent>
           <CardActions>
