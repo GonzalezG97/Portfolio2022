@@ -89,6 +89,7 @@ export default function Portoflio() {
           </CardActions>
         </Card>
       </Grid>
+      {/* Film Finder */}
       <Grid item>
         <Card sx={{ maxWidth: 345 }}>
           <CardMedia
@@ -105,8 +106,8 @@ export default function Portoflio() {
             </Typography>
           </CardContent>
           <CardActions>
-            <Button size="small">Share</Button>
-            <Button size="small">Learn More</Button>
+            <Button size="small">Github</Button>
+            <Button size="small">Live</Button>
           </CardActions>
         </Card>
       </Grid>
