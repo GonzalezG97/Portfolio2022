@@ -9,7 +9,7 @@ import Grid from "@mui/material/Grid";
 
 export default function Portoflio() {
   return (
-    <Grid container justifyContent='center' spacing={2}>
+    <Grid container justifyContent="center" spacing={2}>
       <Grid item>
         <Card sx={{ maxWidth: 345 }}>
           <CardMedia
@@ -19,15 +19,16 @@ export default function Portoflio() {
           />
           <CardContent>
             <Typography gutterBottom variant="h5" component="div">
-            Wanderting Adventure
+              Wanderting Adventure
             </Typography>
             <Typography variant="body2" color="text.secondary">
-            A text adventure game that will truly test your skill. Can you outsmart your opponents in battle?
+              A text adventure game that will truly test your skill. Can you
+              outsmart your opponents in battle?
             </Typography>
           </CardContent>
           <CardActions>
-            <Button size="small">Share</Button>
-            <Button size="small">Learn More</Button>
+            <Button size="small">Github</Button>
+            <Button size="small">Live</Button>
           </CardActions>
         </Card>
       </Grid>
