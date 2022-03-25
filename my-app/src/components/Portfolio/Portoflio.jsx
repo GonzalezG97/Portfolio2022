@@ -70,7 +70,13 @@ export default function Portoflio() {
             </Typography>
           </CardContent>
           <CardActions>
-            <Button size="small">Github</Button>
+            <Button
+            onClick={() => {
+                window.open(
+                  "https://github.com/GonzalezG97/WeebHub",
+                  "_blank"
+                );
+              }} size="small">Github</Button>
             <Button size="small">Live More</Button>
           </CardActions>
         </Card>
