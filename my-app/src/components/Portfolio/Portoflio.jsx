@@ -27,7 +27,17 @@ export default function Portoflio() {
             </Typography>
           </CardContent>
           <CardActions>
-            <Button size="small">Github</Button>
+            <Button
+              onClick={() => {
+                window.open(
+                  "https://github.com/madison-vega/wandering-adventure",
+                  "_blank"
+                );
+              }}
+              size="small"
+            >
+              Github
+            </Button>
             <Button size="small">Live</Button>
           </CardActions>
         </Card>
