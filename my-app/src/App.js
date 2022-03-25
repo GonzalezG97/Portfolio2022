@@ -7,9 +7,9 @@ import Portfolio from '../src/components/Portfolio/Portoflio'
 function App() {
   return (
     <div className="App">
-      {/* <AboutMe/>
-      <ContactMe/> */}
+      <AboutMe/>
       <Portfolio/>
+      <ContactMe/>
     </div>
   );
 }
