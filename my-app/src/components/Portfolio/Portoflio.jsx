@@ -14,17 +14,15 @@ export default function Portoflio() {
         <Card sx={{ maxWidth: 345 }}>
           <CardMedia
             component="img"
-            alt="green iguana"
-            height="140"
-            image="/static/images/cards/contemplative-reptile.jpg"
+            alt="Wanderting Adventure"
+            image="https://live.staticflickr.com/65535/51440759308_1ab5b73624_c.jpg"
           />
           <CardContent>
             <Typography gutterBottom variant="h5" component="div">
-              Lizard
+            Wanderting Adventure
             </Typography>
             <Typography variant="body2" color="text.secondary">
-              Lizards are a widespread group of squamate reptiles, with over
-              6,000 species, ranging across all continents except Antarctica
+            A text adventure game that will truly test your skill. Can you outsmart your opponents in battle?
             </Typography>
           </CardContent>
           <CardActions>
