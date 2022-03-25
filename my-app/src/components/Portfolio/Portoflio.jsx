@@ -12,7 +12,7 @@ export default function Portoflio() {
   return (
     <div>
       <Container>
-        <Typography variant="h3" component="h1">
+        <Typography variant="h2" component="h1">
           Portoflio
         </Typography>
       </Container>

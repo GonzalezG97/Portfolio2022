@@ -1,13 +1,14 @@
 import React from "react";
 import Typography from "@mui/material/Typography"
 import Container from '@mui/material/Container';
+import Grid from '@mui/material/Grid';
 
 
 function AboutMe() {
     return (
         <div>
             <Container maxWidth="xlg">
-            <Typography variant="h3" component="h1">
+            <Typography variant="h2" component="h1">
                 About Me
             </Typography>
             <Typography variant="body1" component="p">
@@ -17,6 +18,13 @@ function AboutMe() {
                 Armed with this knowledge I plan to build applications and websites with
                 the user in mind to make sure its easy to read and use.
             </Typography>
+            <Grid container>
+                <Grid item>
+                    <Typography variant="h3" component="h2">
+                        Skills 
+                    </Typography>
+                </Grid>
+            </Grid>
             </Container>                
         </div>
     );
