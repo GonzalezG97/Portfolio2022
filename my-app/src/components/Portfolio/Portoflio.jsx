@@ -10,7 +10,7 @@ import Grid from "@mui/material/Grid";
 export default function Portoflio() {
   return (
     <Grid container justifyContent="center" spacing={2}>
-        {/* Wandering Adventure */}
+      {/* Wandering Adventure */}
       <Grid item>
         <Card sx={{ maxWidth: 345 }}>
           <CardMedia
@@ -66,24 +66,26 @@ export default function Portoflio() {
               WeebHub
             </Typography>
             <Typography variant="body2" color="text.secondary">
-              A place where you can discuss your favorite animes. 
+              A place where you can discuss your favorite anime.
             </Typography>
           </CardContent>
           <CardActions>
             <Button
-            onClick={() => {
-                window.open(
-                  "https://github.com/GonzalezG97/WeebHub",
-                  "_blank"
-                );
-              }} size="small">Github</Button>
+              onClick={() => {
+                window.open("https://github.com/GonzalezG97/WeebHub", "_blank");
+              }}
+              size="small"
+            >
+              Github
+            </Button>
             <Button
-            onClick={() => {
-                window.open(
-                  "https://weebhub.herokuapp.com/",
-                  "_blank"
-                );
-              }} size="small">Live More</Button>
+              onClick={() => {
+                window.open("https://weebhub.herokuapp.com/", "_blank");
+              }}
+              size="small"
+            >
+              Live
+            </Button>
           </CardActions>
         </Card>
       </Grid>
@@ -91,17 +93,15 @@ export default function Portoflio() {
         <Card sx={{ maxWidth: 345 }}>
           <CardMedia
             component="img"
-            alt="green iguana"
-            height="140"
-            image="/static/images/cards/contemplative-reptile.jpg"
+            alt="Film Finder"
+            image="https://live.staticflickr.com/65535/51044072753_d6b8c1e9e8_c.jpg"
           />
           <CardContent>
             <Typography gutterBottom variant="h5" component="div">
-              Lizard
+              Film Finder
             </Typography>
             <Typography variant="body2" color="text.secondary">
-              Lizards are a widespread group of squamate reptiles, with over
-              6,000 species, ranging across all continents except Antarctica
+              Having trouble finding whats out right now? You can search by category for the hottest movies.
             </Typography>
           </CardContent>
           <CardActions>
