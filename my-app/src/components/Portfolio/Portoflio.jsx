@@ -38,7 +38,17 @@ export default function Portoflio() {
             >
               Github
             </Button>
-            <Button size="small">Live</Button>
+            <Button
+              onClick={() => {
+                window.open(
+                  "https://wanderingadventure.herokuapp.com/login",
+                  "_blank"
+                );
+              }}
+              size="small"
+            >
+              Live
+            </Button>
           </CardActions>
         </Card>
       </Grid>
