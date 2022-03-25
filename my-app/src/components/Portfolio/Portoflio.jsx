@@ -77,7 +77,13 @@ export default function Portoflio() {
                   "_blank"
                 );
               }} size="small">Github</Button>
-            <Button size="small">Live More</Button>
+            <Button
+            onClick={() => {
+                window.open(
+                  "https://weebhub.herokuapp.com/",
+                  "_blank"
+                );
+              }} size="small">Live More</Button>
           </CardActions>
         </Card>
       </Grid>
