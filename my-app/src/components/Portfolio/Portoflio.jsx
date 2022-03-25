@@ -102,12 +102,33 @@ export default function Portoflio() {
               Film Finder
             </Typography>
             <Typography variant="body2" color="text.secondary">
-              Having trouble finding whats out right now? You can search by category for the hottest movies.
+              Having trouble finding whats out right now? You can search by
+              category for the hottest movies.
             </Typography>
           </CardContent>
           <CardActions>
-            <Button size="small">Github</Button>
-            <Button size="small">Live</Button>
+            <Button
+              onClick={() => {
+                window.open(
+                  "https://github.com/GonzalezG97/Film-Finder",
+                  "_blank"
+                );
+              }}
+              size="small"
+            >
+              Github
+            </Button>
+            <Button
+              onClick={() => {
+                window.open(
+                  "https://gonzalezg97.github.io/Film-Finder/",
+                  "_blank"
+                );
+              }}
+              size="small"
+            >
+              Live
+            </Button>
           </CardActions>
         </Card>
       </Grid>
