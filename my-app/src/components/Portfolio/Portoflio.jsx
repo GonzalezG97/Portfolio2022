@@ -70,8 +70,8 @@ export default function Portoflio() {
             </Typography>
           </CardContent>
           <CardActions>
-            <Button size="small">Share</Button>
-            <Button size="small">Learn More</Button>
+            <Button size="small">Github</Button>
+            <Button size="small">Live More</Button>
           </CardActions>
         </Card>
       </Grid>
