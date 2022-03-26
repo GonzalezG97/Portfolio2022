@@ -7,8 +7,8 @@ import ListItem from "@mui/material/ListItem";
 import ListItemIcon from "@mui/material/ListItemIcon";
 import ListItemText from "@mui/material/ListItemText";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faReact, faJs, faHtml5, faCss3Alt, faNodeJs } from '@fortawesome/free-brands-svg-icons';
-import { faCoffee } from '@fortawesome/free-solid-svg-icons';
+import { faReact, faJs, faHtml5, faCss3Alt, faNodeJs, faNode } from '@fortawesome/free-brands-svg-icons';
+import { faDatabase } from '@fortawesome/free-solid-svg-icons';
 
 
 function AboutMe() {
@@ -50,8 +50,16 @@ function AboutMe() {
                 <ListItemText primary="CSS" />
               </ListItem>
               <ListItem>
-                <FontAwesomeIcon icon={faNodeJs}/>
+                <FontAwesomeIcon icon={faNode}/>
                 <ListItemText primary="Node.js" />
+              </ListItem>
+              <ListItem>
+                <FontAwesomeIcon icon={faNodeJs}/>
+                <ListItemText primary="Express.js" />
+              </ListItem>
+              <ListItem>
+                <FontAwesomeIcon icon={faDatabase}/>
+                <ListItemText primary="MySQL" />
               </ListItem>
             </List>
           </Grid>
