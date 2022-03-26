@@ -69,6 +69,10 @@ function AboutMe() {
                 <FontAwesomeIcon icon={faDatabase}/>
                 <ListItemText primary="MongoDB" />
               </ListItem>
+              <ListItem>
+                <FontAwesomeIcon icon={faDatabase}/>
+                <ListItemText primary="Mongoose" />
+              </ListItem>
             </List>
           </Grid>
         </Grid>
