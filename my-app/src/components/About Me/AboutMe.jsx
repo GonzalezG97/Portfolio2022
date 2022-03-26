@@ -7,7 +7,7 @@ import ListItem from "@mui/material/ListItem";
 import ListItemIcon from "@mui/material/ListItemIcon";
 import ListItemText from "@mui/material/ListItemText";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faReact, faJs } from '@fortawesome/free-brands-svg-icons';
+import { faReact, faJs, faHtml5 } from '@fortawesome/free-brands-svg-icons';
 import { faCoffee } from '@fortawesome/free-solid-svg-icons';
 
 
@@ -41,6 +41,11 @@ function AboutMe() {
                 <FontAwesomeIcon icon={faJs}/>
                 <ListItemText primary="JavaScript" />
               </ListItem>
+              <ListItem>
+                <FontAwesomeIcon icon={faHtml5}/>
+                <ListItemText primary="HTML" />
+              </ListItem>
+              
             </List>
           </Grid>
         </Grid>
