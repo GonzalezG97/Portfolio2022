@@ -2,6 +2,7 @@ import React from "react";
 import Typography from "@mui/material/Typography";
 import Container from "@mui/material/Container";
 import Grid from "@mui/material/Grid";
+import Button from "@mui/material/Button";
 import List from "@mui/material/List";
 import ListItem from "@mui/material/ListItem";
 import ListItemText from "@mui/material/ListItemText";
@@ -33,7 +34,8 @@ function AboutMe() {
           applications and websites with the user in mind to make sure its easy
           to read and use.
         </Typography>
-        <Grid container>
+        <Grid container spacing={15}>
+          {/* Skills */}
           <Grid item>
             <Typography variant="h3" component="h2">
               Skills
@@ -81,6 +83,10 @@ function AboutMe() {
               </ListItem>
             </List>
           </Grid>
+          <Grid item>
+            <Button> Test </Button>
+          </Grid>
+          {/* Work History */}
           <Grid item>
           <Typography variant="h3" component="h2">
               Work History
