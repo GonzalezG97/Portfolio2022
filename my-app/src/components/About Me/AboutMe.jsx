@@ -4,14 +4,20 @@ import Container from "@mui/material/Container";
 import Grid from "@mui/material/Grid";
 import List from "@mui/material/List";
 import ListItem from "@mui/material/ListItem";
-import ListItemIcon from "@mui/material/ListItemIcon";
 import ListItemText from "@mui/material/ListItemText";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faReact, faJs, faHtml5, faCss3Alt, faNodeJs, faNode } from '@fortawesome/free-brands-svg-icons';
-import { faDatabase } from '@fortawesome/free-solid-svg-icons';
-
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faReact,
+  faJs,
+  faHtml5,
+  faCss3Alt,
+  faNodeJs,
+  faNode,
+} from "@fortawesome/free-brands-svg-icons";
+import { faDatabase } from "@fortawesome/free-solid-svg-icons";
 
 function AboutMe() {
+
   return (
     <div>
       <Container maxWidth="xlg">
@@ -34,46 +40,51 @@ function AboutMe() {
             </Typography>
             <List>
               <ListItem>
-                <FontAwesomeIcon icon={faReact}/>
+                <FontAwesomeIcon icon={faReact} />
                 <ListItemText primary="React" />
               </ListItem>
               <ListItem>
-                <FontAwesomeIcon icon={faJs}/>
+                <FontAwesomeIcon icon={faJs} />
                 <ListItemText primary="JavaScript" />
               </ListItem>
               <ListItem>
-                <FontAwesomeIcon icon={faHtml5}/>
+                <FontAwesomeIcon icon={faHtml5} />
                 <ListItemText primary="HTML" />
               </ListItem>
               <ListItem>
-                <FontAwesomeIcon icon={faCss3Alt}/>
+                <FontAwesomeIcon icon={faCss3Alt} />
                 <ListItemText primary="CSS" />
               </ListItem>
               <ListItem>
-                <FontAwesomeIcon icon={faNode}/>
+                <FontAwesomeIcon icon={faNode} />
                 <ListItemText primary="Node.js" />
               </ListItem>
               <ListItem>
-                <FontAwesomeIcon icon={faNodeJs}/>
+                <FontAwesomeIcon icon={faNodeJs} />
                 <ListItemText primary="Express.js" />
               </ListItem>
               <ListItem>
-                <FontAwesomeIcon icon={faDatabase}/>
+                <FontAwesomeIcon icon={faDatabase} />
                 <ListItemText primary="MySQL" />
               </ListItem>
               <ListItem>
-                <FontAwesomeIcon icon={faDatabase}/>
+                <FontAwesomeIcon icon={faDatabase} />
                 <ListItemText primary="Sequelize" />
               </ListItem>
               <ListItem>
-                <FontAwesomeIcon icon={faDatabase}/>
+                <FontAwesomeIcon icon={faDatabase} />
                 <ListItemText primary="MongoDB" />
               </ListItem>
               <ListItem>
-                <FontAwesomeIcon icon={faDatabase}/>
+                <FontAwesomeIcon icon={faDatabase} />
                 <ListItemText primary="Mongoose" />
               </ListItem>
             </List>
+          </Grid>
+          <Grid item>
+          <Typography variant="h3" component="h2">
+              Work History
+            </Typography>
           </Grid>
         </Grid>
       </Container>
