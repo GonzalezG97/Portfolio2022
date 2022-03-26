@@ -4,9 +4,12 @@ import Container from "@mui/material/Container";
 import Grid from "@mui/material/Grid";
 import List from "@mui/material/List";
 import ListItem from "@mui/material/ListItem";
-import ListItemAvatar from "@mui/material/ListItemAvatar";
 import ListItemIcon from "@mui/material/ListItemIcon";
 import ListItemText from "@mui/material/ListItemText";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faReact } from '@fortawesome/free-brands-svg-icons';
+import { faCoffee } from '@fortawesome/free-solid-svg-icons';
+
 
 function AboutMe() {
   return (
@@ -31,7 +34,7 @@ function AboutMe() {
             </Typography>
             <List>
               <ListItem>
-                <ListItemIcon></ListItemIcon>
+                <FontAwesomeIcon icon={faReact}/>
                 <ListItemText primary="React" />
               </ListItem>
             </List>
