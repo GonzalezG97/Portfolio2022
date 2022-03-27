@@ -35,10 +35,10 @@ function AboutMe() {
           to read and use.
         </Typography>
         <Grid container spacing={45}>
-          {/* Languages */}
+          {/* Front End */}
           <Grid item>
             <Typography variant="h3" component="h2">
-              Languages
+              Front End
             </Typography>
             <List>
               <ListItem>
@@ -83,6 +83,17 @@ function AboutMe() {
               </ListItem>
             </List>
           </Grid>
+          {/* Back End */}
+          <Grid item>
+          <Typography variant="h3" component="h2">
+              Back End
+            </Typography>
+            <List>
+              <ListItem>
+
+              </ListItem>
+            </List>
+          </Grid>
           {/* Tools*/}
           <Grid item>
             <Typography variant="h3" component="h2">
@@ -106,10 +117,6 @@ function AboutMe() {
                 <ListItemText primary="Heroku" />
               </ListItem>
             </List>
-          </Grid>
-          {/* Button */}
-          <Grid item>
-            <Button> Resume </Button>
           </Grid>
         </Grid>
       </Container>
