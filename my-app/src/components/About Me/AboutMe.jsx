@@ -14,7 +14,8 @@ import {
   faCss3Alt,
   faNodeJs,
   faNode,
-  faGitAlt
+  faGitAlt, 
+  faBootstrap,
 } from "@fortawesome/free-brands-svg-icons";
 import { faDatabase, faCode, faCodeMerge } from "@fortawesome/free-solid-svg-icons";
 
@@ -58,16 +59,14 @@ function AboutMe() {
                 <ListItemText primary="CSS" />
               </ListItem>
               <ListItem>
-                <FontAwesomeIcon icon={faNode} />
-                <ListItemText primary="Node.js" />
+                <ListItemText primary="jQuery" />
               </ListItem>
               <ListItem>
-                <FontAwesomeIcon icon={faNodeJs} />
-                <ListItemText primary="Express.js" />
+                <FontAwesomeIcon icon={faBootstrap} />
+                <ListItemText primary="Booststrap" />
               </ListItem>
               <ListItem>
-                <FontAwesomeIcon icon={faDatabase} />
-                <ListItemText primary="MySQL" />
+                <ListItemText primary="MaterialUI" />
               </ListItem>
             </List>
           </Grid>
