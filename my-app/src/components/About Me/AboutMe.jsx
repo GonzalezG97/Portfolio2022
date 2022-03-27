@@ -41,10 +41,10 @@ function AboutMe() {
           Technologies
         </Typography>
       <Grid container spacing={25}>
-          {/* Front End */}
+          {/* Frontend */}
           <Grid item>
             <Typography variant="h3" component="h2">
-              Front End
+              Frontend
             </Typography>
             <List>
               <ListItem>
@@ -75,10 +75,10 @@ function AboutMe() {
               </ListItem>
             </List>
           </Grid>
-          {/* Back End */}
+          {/* Backend */}
           <Grid item>
           <Typography variant="h3" component="h2">
-              Back End
+              Backend
             </Typography>
             <List>
             <ListItem>
