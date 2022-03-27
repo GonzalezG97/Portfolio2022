@@ -69,6 +69,26 @@ function AboutMe() {
                 <FontAwesomeIcon icon={faDatabase} />
                 <ListItemText primary="MySQL" />
               </ListItem>
+            </List>
+          </Grid>
+          {/* Back End */}
+          <Grid item>
+          <Typography variant="h3" component="h2">
+              Back End
+            </Typography>
+            <List>
+            <ListItem>
+                <FontAwesomeIcon icon={faNode} />
+                <ListItemText primary="Node.js" />
+              </ListItem>
+              <ListItem>
+                <FontAwesomeIcon icon={faNodeJs} />
+                <ListItemText primary="Express.js" />
+              </ListItem>
+              <ListItem>
+                <FontAwesomeIcon icon={faDatabase} />
+                <ListItemText primary="MySQL" />
+              </ListItem>
               <ListItem>
                 <FontAwesomeIcon icon={faDatabase} />
                 <ListItemText primary="Sequelize" />
@@ -80,17 +100,6 @@ function AboutMe() {
               <ListItem>
                 <FontAwesomeIcon icon={faDatabase} />
                 <ListItemText primary="Mongoose" />
-              </ListItem>
-            </List>
-          </Grid>
-          {/* Back End */}
-          <Grid item>
-          <Typography variant="h3" component="h2">
-              Back End
-            </Typography>
-            <List>
-              <ListItem>
-
               </ListItem>
             </List>
           </Grid>
