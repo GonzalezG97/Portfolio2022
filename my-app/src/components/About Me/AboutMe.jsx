@@ -16,6 +16,7 @@ import {
   faNode,
   faGitAlt, 
   faBootstrap,
+  faGithub
 } from "@fortawesome/free-brands-svg-icons";
 import { faDatabase, faCode, faCodeMerge } from "@fortawesome/free-solid-svg-icons";
 
@@ -35,7 +36,12 @@ function AboutMe() {
           applications and websites with the user in mind to make sure its easy
           to read and use.
         </Typography>
-        <Grid container spacing={45}>
+      </Container>
+      <Container justifyContent="center">
+      <Typography variant="h2" component="h1">
+          Technologies
+        </Typography>
+      <Grid container spacing={25}>
           {/* Front End */}
           <Grid item>
             <Typography variant="h3" component="h2">
@@ -113,7 +119,10 @@ function AboutMe() {
                 <ListItemText primary="Git" />
               </ListItem>
               <ListItem>
-                
+                <FontAwesomeIcon icon={faGithub} />
+                <ListItemText primary="Github" />
+              </ListItem>
+              <ListItem>
                 <ListItemText primary="Postman" />
               </ListItem>
               <ListItem>
