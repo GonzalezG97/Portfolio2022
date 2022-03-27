@@ -14,11 +14,11 @@ import {
   faCss3Alt,
   faNodeJs,
   faNode,
+  faGitAlt
 } from "@fortawesome/free-brands-svg-icons";
-import { faDatabase } from "@fortawesome/free-solid-svg-icons";
+import { faDatabase, faCode, faCodeMerge } from "@fortawesome/free-solid-svg-icons";
 
 function AboutMe() {
-
   return (
     <div>
       <Container maxWidth="xlg">
@@ -34,11 +34,11 @@ function AboutMe() {
           applications and websites with the user in mind to make sure its easy
           to read and use.
         </Typography>
-        <Grid container spacing={15}>
-          {/* Skills */}
+        <Grid container spacing={45}>
+          {/* Languages */}
           <Grid item>
             <Typography variant="h3" component="h2">
-              Skills
+              Languages
             </Typography>
             <List>
               <ListItem>
@@ -83,14 +83,33 @@ function AboutMe() {
               </ListItem>
             </List>
           </Grid>
+          {/* Tools*/}
           <Grid item>
-            <Button> Test </Button>
-          </Grid>
-          {/* Work History */}
-          <Grid item>
-          <Typography variant="h3" component="h2">
-              Work History
+            <Typography variant="h3" component="h2">
+              Tools
             </Typography>
+            <List>
+              <ListItem>
+                <FontAwesomeIcon icon={faGitAlt} />
+                <ListItemText primary="Git" />
+              </ListItem>
+              <ListItem>
+                
+                <ListItemText primary="Postman" />
+              </ListItem>
+              <ListItem>
+                <FontAwesomeIcon icon={faCode} />
+                <ListItemText primary="VS Code" />
+              </ListItem>
+              <ListItem>
+                <FontAwesomeIcon icon={faCodeMerge} />
+                <ListItemText primary="Heroku" />
+              </ListItem>
+            </List>
+          </Grid>
+          {/* Button */}
+          <Grid item>
+            <Button> Resume </Button>
           </Grid>
         </Grid>
       </Container>
