@@ -3,15 +3,15 @@ import './App.css';
 import AboutMe from '../src/components/About Me/AboutMe';
 import ContactMe from '../src/components/ContactMe/ContactMe';
 import Portfolio from '../src/components/Portfolio/Portoflio';
-import Navbar from '../src/components/Navbar/Navbar'
+import Navbar from './components/Navbar/Navbar';
 
 function App() {
   return (
     <div className="App">
       <Navbar/>
-      {/* <AboutMe/>
+      {/* {/* <AboutMe/> */}
       <Portfolio/>
-      <ContactMe/> */}
+      <ContactMe/>
     </div>
   );
 }
