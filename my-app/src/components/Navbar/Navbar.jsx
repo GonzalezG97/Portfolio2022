@@ -27,6 +27,9 @@ function Navbar() {
                 <Typography variant="h4" component="h2">
                     Home
                 </Typography>
+                <Typography variant="h4" component="h2">
+                    Technologies
+                </Typography>
             </Toolbar>
         </Container>
       </AppBar>
