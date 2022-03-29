@@ -6,6 +6,7 @@ import IconButton from '@mui/material/IconButton';
 import Avatar from '@mui/material/Avatar';
 import Button from '@mui/material/Button';
 import Tooltip from '@mui/material/Tooltip';
+import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faMandalorian } from "@fortawesome/free-brands-svg-icons";
 
@@ -22,6 +23,9 @@ function Navbar() {
                 component="h1"
                 >
                     <FontAwesomeIcon icon={faMandalorian} />
+                </Typography>
+                <Typography variant="h4" component="h2">
+                    Home
                 </Typography>
             </Toolbar>
         </Container>
