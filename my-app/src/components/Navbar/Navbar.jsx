@@ -6,6 +6,8 @@ import IconButton from '@mui/material/IconButton';
 import Avatar from '@mui/material/Avatar';
 import Button from '@mui/material/Button';
 import Tooltip from '@mui/material/Tooltip';
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faMandalorian } from "@fortawesome/free-brands-svg-icons";
 
 
 
@@ -13,11 +15,13 @@ import Tooltip from '@mui/material/Tooltip';
 function Navbar() {
     return(
     <AppBar>
-        <Container>
+        <Container maxWidth="lx">
             <Toolbar>
                 <Typography
+                variant="h3"
+                component="h1"
                 >
-                    Test
+                    <FontAwesomeIcon icon={faMandalorian} />
                 </Typography>
             </Toolbar>
         </Container>
