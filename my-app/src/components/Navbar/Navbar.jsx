@@ -33,6 +33,9 @@ function Navbar() {
                 <Typography variant="h4" component="h2">
                     Portfolio
                 </Typography>
+                <Typography variant="h4" component="h2">
+                    Contact Me
+                </Typography>
             </Toolbar>
         </Container>
       </AppBar>

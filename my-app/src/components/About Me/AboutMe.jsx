@@ -36,7 +36,7 @@ function AboutMe() {
           to read and use.
         </Typography>
       </Container>
-      <Container justifyContent="center">
+      <Container justifycontent="center">
       <Typography variant="h2" component="h1">
           Technologies
         </Typography>
