@@ -32,7 +32,7 @@ function Navbar() {
             <Link to="/Portfolio">Portfolio</Link>
           </Typography>
           <Typography variant="h4" component="h2">
-            Contact Me
+            <Link to="/Contact">Contact Me</Link>
           </Typography>
         </Box>
       </Grid>
