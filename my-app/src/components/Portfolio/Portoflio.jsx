@@ -7,10 +7,46 @@ import Container from "@mui/material/Container";
 import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
 import Grid from "@mui/material/Grid";
+import AppBar from "@mui/material/AppBar";
+import { faMandalorian } from "@fortawesome/free-brands-svg-icons";
+import Box from "@mui/material/Box";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { useNavigate } from "react-router-dom";
 
 export default function Portoflio() {
+  let navigate = useNavigate();
+
   return (
     <div>
+
+<AppBar position="static">
+      <Grid container maxWidth="lx">
+        
+          <Typography variant="h3" component="h1">
+            <FontAwesomeIcon icon={faMandalorian} />
+          </Typography>
+          <Box sx={{ flexGrow: 1, display: { xs: "flex", md: "flex" } }}>
+          <Button
+          onClick={() => {
+            navigate("/")
+          }}
+          >
+              Home
+          </Button>
+          <Typography variant="h4" component="h2">
+              Technologies
+            </Typography>
+            <Typography variant="h4" component="h2">
+              Portfolio
+            </Typography>
+            <Typography variant="h4" component="h2">
+              Contact Me
+            </Typography>
+          </Box>
+        
+      </Grid>
+    </AppBar>
+
       <Container>
         <Typography variant="h2" component="h1">
           Portoflio

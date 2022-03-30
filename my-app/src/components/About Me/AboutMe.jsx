@@ -18,10 +18,22 @@ import {
   faGithub
 } from "@fortawesome/free-brands-svg-icons";
 import { faDatabase, faCode, faCodeMerge } from "@fortawesome/free-solid-svg-icons";
+import AppBar from "@mui/material/AppBar";
+import { faMandalorian } from "@fortawesome/free-brands-svg-icons";
+import Box from "@mui/material/Box";
+import Button from "@mui/material/Button";
+import { useNavigate } from "react-router-dom";
+
 
 function AboutMe() {
+
+  let navigate = useNavigate();
+
   return (
     <div>
+      
+
+
       <Container maxWidth="xlg">
         <Typography variant="h2" component="h1">
           About Me
