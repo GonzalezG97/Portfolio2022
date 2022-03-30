@@ -7,46 +7,34 @@ import Avatar from "@mui/material/Avatar";
 import Button from "@mui/material/Button";
 import Tooltip from "@mui/material/Tooltip";
 import Menu from "@mui/material/Menu";
-import MenuItem from '@mui/material/MenuItem';
-import Grid from '@mui/material/Grid';
+import MenuItem from "@mui/material/MenuItem";
+import Grid from "@mui/material/Grid";
 import Box from "@mui/material/Box";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faMandalorian } from "@fortawesome/free-brands-svg-icons";
 
-
-
-
 function Navbar() {
-
-    let navigate = useNavigate();
+  let navigate = useNavigate();
 
   return (
     <AppBar position="static">
       <Grid container maxWidth="lx">
-        
-          <Typography variant="h3" component="h1">
-            <FontAwesomeIcon icon={faMandalorian} />
-          </Typography>
-          <Box sx={{ flexGrow: 1, display: { xs: "flex", md: "flex" } }}>
-          <Button
-          onClick={() => {
-            navigate("/")
-          }}
-          >
-              Home
-          </Button>
+        <Typography variant="h3" component="h1">
+          <FontAwesomeIcon icon={faMandalorian} />
+        </Typography>
+        <Box spacing={5} sx={{ flexGrow: 1, display: { xs: "flex", md: "flex" } }}>
           <Typography variant="h4" component="h2">
-              Technologies
-            </Typography>
-            <Typography variant="h4" component="h2">
-              Portfolio
-            </Typography>
-            <Typography variant="h4" component="h2">
-              Contact Me
-            </Typography>
-          </Box>
-        
+            <Link to="/">Home</Link>
+          </Typography>
+
+          <Typography variant="h4" component="h2">
+            <Link to="/Portfolio">Portfolio</Link>
+          </Typography>
+          <Typography variant="h4" component="h2">
+            Contact Me
+          </Typography>
+        </Box>
       </Grid>
     </AppBar>
   );

@@ -18,22 +18,15 @@ import {
   faGithub
 } from "@fortawesome/free-brands-svg-icons";
 import { faDatabase, faCode, faCodeMerge } from "@fortawesome/free-solid-svg-icons";
-import AppBar from "@mui/material/AppBar";
-import { faMandalorian } from "@fortawesome/free-brands-svg-icons";
-import Box from "@mui/material/Box";
-import Button from "@mui/material/Button";
 import { useNavigate } from "react-router-dom";
+import Navbar from "../Navbar/Navbar";
 
 
 function AboutMe() {
 
-  let navigate = useNavigate();
-
   return (
     <div>
-      
-
-
+    <Navbar/>
       <Container maxWidth="xlg">
         <Typography variant="h2" component="h1">
           About Me
@@ -47,106 +40,6 @@ function AboutMe() {
           applications and websites with the user in mind to make sure its easy
           to read and use.
         </Typography>
-      </Container>
-      <Container justifycontent="center">
-      <Typography variant="h2" component="h1">
-          Technologies
-        </Typography>
-      <Grid container spacing={25}>
-          {/* Frontend */}
-          <Grid item>
-            <Typography variant="h3" component="h2">
-              Frontend
-            </Typography>
-            <List>
-              <ListItem>
-                <FontAwesomeIcon icon={faReact} />
-                <ListItemText primary="React" />
-              </ListItem>
-              <ListItem>
-                <FontAwesomeIcon icon={faJs} />
-                <ListItemText primary="JavaScript" />
-              </ListItem>
-              <ListItem>
-                <FontAwesomeIcon icon={faHtml5} />
-                <ListItemText primary="HTML" />
-              </ListItem>
-              <ListItem>
-                <FontAwesomeIcon icon={faCss3Alt} />
-                <ListItemText primary="CSS" />
-              </ListItem>
-              <ListItem>
-                <ListItemText primary="jQuery" />
-              </ListItem>
-              <ListItem>
-                <FontAwesomeIcon icon={faBootstrap} />
-                <ListItemText primary="Booststrap" />
-              </ListItem>
-              <ListItem>
-                <ListItemText primary="MaterialUI" />
-              </ListItem>
-            </List>
-          </Grid>
-          {/* Backend */}
-          <Grid item>
-          <Typography variant="h3" component="h2">
-              Backend
-            </Typography>
-            <List>
-            <ListItem>
-                <FontAwesomeIcon icon={faNode} />
-                <ListItemText primary="Node.js" />
-              </ListItem>
-              <ListItem>
-                <FontAwesomeIcon icon={faNodeJs} />
-                <ListItemText primary="Express.js" />
-              </ListItem>
-              <ListItem>
-                <FontAwesomeIcon icon={faDatabase} />
-                <ListItemText primary="MySQL" />
-              </ListItem>
-              <ListItem>
-                <FontAwesomeIcon icon={faDatabase} />
-                <ListItemText primary="Sequelize" />
-              </ListItem>
-              <ListItem>
-                <FontAwesomeIcon icon={faDatabase} />
-                <ListItemText primary="MongoDB" />
-              </ListItem>
-              <ListItem>
-                <FontAwesomeIcon icon={faDatabase} />
-                <ListItemText primary="Mongoose" />
-              </ListItem>
-            </List>
-          </Grid>
-          {/* Tools*/}
-          <Grid item>
-            <Typography variant="h3" component="h2">
-              Tools
-            </Typography>
-            <List>
-              <ListItem>
-                <FontAwesomeIcon icon={faGitAlt} />
-                <ListItemText primary="Git" />
-              </ListItem>
-              <ListItem>
-                <FontAwesomeIcon icon={faGithub} />
-                <ListItemText primary="Github" />
-              </ListItem>
-              <ListItem>
-                <ListItemText primary="Postman" />
-              </ListItem>
-              <ListItem>
-                <FontAwesomeIcon icon={faCode} />
-                <ListItemText primary="VS Code" />
-              </ListItem>
-              <ListItem>
-                <FontAwesomeIcon icon={faCodeMerge} />
-                <ListItemText primary="Heroku" />
-              </ListItem>
-            </List>
-          </Grid>
-        </Grid>
       </Container>
     </div>
   );
