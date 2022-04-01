@@ -10,7 +10,6 @@ import Tech from "./components/Tech/Tech"
 function App() {
   return (
     <div className="App">
-      {/* <Navbar /> */}
       <BrowserRouter>
       <Routes>
         <Route exact path='/' element={<AboutMe />}></Route>

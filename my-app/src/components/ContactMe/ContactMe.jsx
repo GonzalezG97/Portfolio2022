@@ -6,6 +6,7 @@ import Button from "@mui/material/Button";
 import TextField from "@mui/material/TextField";
 import { CardContent, Card } from "@mui/material";
 import axios from "axios";
+import Navbar from "../Navbar/Navbar"
 
 function ContactMe() {
   const formId = process.env.REACT_APP_FORM_ID;
@@ -26,6 +27,7 @@ function ContactMe() {
 
   return (
     <div>
+      <Navbar/>
       <Container >
         <Typography variant="h2" component="h1">
           Contact Me
