@@ -10,12 +10,11 @@ import Menu from "@mui/material/Menu";
 import MenuItem from "@mui/material/MenuItem";
 import Grid from "@mui/material/Grid";
 import Box from "@mui/material/Box";
-import { useNavigate, Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faMandalorian } from "@fortawesome/free-brands-svg-icons";
 
 function Navbar() {
-  let navigate = useNavigate();
 
   return (
     <AppBar position="static">
@@ -30,6 +29,9 @@ function Navbar() {
 
           <Typography variant="h4" component="h2">
             <Link to="/Portfolio">Portfolio</Link>
+          </Typography>
+          <Typography variant="h4" component="h2">
+            <Link to="/Tech">Technologies</Link>
           </Typography>
           <Typography variant="h4" component="h2">
             <Link to="/Contact">Contact Me</Link>
