@@ -52,6 +52,9 @@ function Navbar() {
     </AppBar>
     { page === "0" ? (
       <AboutMe />) :null}
+      { page === "1" ? (
+      <Portfolio />) :null}
+      
     </>
       
   );
