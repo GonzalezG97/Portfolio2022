@@ -16,6 +16,9 @@ import Box from "@mui/material/Box";
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faMandalorian } from "@fortawesome/free-brands-svg-icons";
+import AboutMe from "../About Me/AboutMe";
+import ContactMe from "../ContactMe/ContactMe";
+import Portfolio from "../Portfolio/Portoflio";
 
 function Navbar() {
 
@@ -34,6 +37,7 @@ function Navbar() {
   }, []);
 
   return (
+    <>
     <AppBar position="sticky" sx={{ background: "black" }}>
       <Toolbar>
         <Typography variant="h3" component="h1">
@@ -46,6 +50,10 @@ function Navbar() {
         </Tabs>
       </Toolbar>
     </AppBar>
+    { page === "0" ? (
+      <AboutMe />) :null}
+    </>
+      
   );
 }
 
