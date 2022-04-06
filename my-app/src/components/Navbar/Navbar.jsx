@@ -16,25 +16,12 @@ import { faMandalorian } from "@fortawesome/free-brands-svg-icons";
 
 function Navbar() {
   return (
-    <AppBar position="static">
-      <Grid container maxWidth="lx">
-        <Typography variant="h3" component="h1">
+    <AppBar position="static" sx={{background:"black"}}>
+      <Toolbar>
+      <Typography variant="h3" component="h1">
           <FontAwesomeIcon icon={faMandalorian} />
         </Typography>
-        <Box
-          sx={{ flexGrow: 1, display: { xs: "flex", md: "flex" } }}
-        >
-          <Typography variant="h4" component="h2">
-            <Link to="/">Home</Link>
-          </Typography>
-          <Typography variant="h4" component="h2">
-            <Link to="/Portfolio">Portfolio</Link>
-          </Typography>
-          <Typography variant="h4" component="h2">
-            <Link to="/Contact">Contact Me</Link>
-          </Typography>
-        </Box>
-      </Grid>
+      </Toolbar>
     </AppBar>
   );
 }
