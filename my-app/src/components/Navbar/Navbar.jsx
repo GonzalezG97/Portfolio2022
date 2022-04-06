@@ -18,7 +18,7 @@ import { faMandalorian } from "@fortawesome/free-brands-svg-icons";
 
 function Navbar() {
   return (
-    <AppBar position="static" sx={{background:"black"}}>
+    <AppBar position="sticky" sx={{background:"black"}}>
       <Toolbar>
       <Typography variant="h3" component="h1">
           <FontAwesomeIcon icon={faMandalorian} />
