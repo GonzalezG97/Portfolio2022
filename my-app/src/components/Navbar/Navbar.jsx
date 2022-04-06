@@ -1,3 +1,4 @@
+import { React, useState } from 'react'
 import AppBar from "@mui/material/AppBar";
 import Typography from "@mui/material/Typography";
 import Container from "@mui/material/Container";
@@ -17,17 +18,19 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faMandalorian } from "@fortawesome/free-brands-svg-icons";
 
 function Navbar() {
+
+  const [page, setPage] = useState()
+
   return (
-    <AppBar position="sticky" sx={{background:"black"}}>
+    <AppBar position="sticky" sx={{ background: "black" }}>
       <Toolbar>
-      <Typography variant="h3" component="h1">
+        <Typography variant="h3" component="h1">
           <FontAwesomeIcon icon={faMandalorian} />
         </Typography>
-        <Tabs sx={{marginLeft: 'auto'}} textColor="inherit" value={0} indicatorColor="secondary">
-            <Tab label="Home"/>
-            <Tab label="Portfolio"/>
-            <Tab label="Contact"/>
-            
+        <Tabs sx={{ marginLeft: 'auto' }} textColor="inherit" value={page} onChange={(e, value) => setPage(value)} indicatorColor="secondary">
+          <Tab label="Home" />
+          <Tab label="Portfolio" />
+          <Tab label="Contact" />
         </Tabs>
       </Toolbar>
     </AppBar>
