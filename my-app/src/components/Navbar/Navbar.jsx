@@ -23,7 +23,7 @@ function Navbar() {
       <Typography variant="h3" component="h1">
           <FontAwesomeIcon icon={faMandalorian} />
         </Typography>
-        <Tabs sx={{marginLeft: 'auto'}} textColor="inherit">
+        <Tabs sx={{marginLeft: 'auto'}} textColor="inherit" value={0} indicatorColor="secondary">
             <Tab label="Home"/>
             <Tab label="Portfolio"/>
             <Tab label="Contact"/>
