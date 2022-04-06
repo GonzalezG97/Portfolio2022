@@ -15,10 +15,9 @@ import { useNavigate } from "react-router-dom";
 import Navbar from "../Navbar/Navbar";
 
 export default function Portoflio() {
-
   return (
     <div>
-    <Navbar/>
+      <Navbar />
       <Container>
         <Typography variant="h2" component="h1">
           Portoflio

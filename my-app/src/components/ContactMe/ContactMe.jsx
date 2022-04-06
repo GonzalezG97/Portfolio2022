@@ -6,7 +6,7 @@ import Button from "@mui/material/Button";
 import TextField from "@mui/material/TextField";
 import { CardContent, Card } from "@mui/material";
 import axios from "axios";
-import Navbar from "../Navbar/Navbar"
+import Navbar from "../Navbar/Navbar";
 
 function ContactMe() {
   const formId = process.env.REACT_APP_FORM_ID;
@@ -27,8 +27,8 @@ function ContactMe() {
 
   return (
     <div>
-      <Navbar/>
-      <Container >
+      <Navbar />
+      <Container>
         <Typography variant="h2" component="h1">
           Contact Me
         </Typography>
@@ -58,94 +58,94 @@ function ContactMe() {
           </Grid>
         </Grid>
         <Grid container item collumns={2}>
-            <Grid container item>
-          <Card>
-            <CardContent>
-              <form onSubmit={OnSubmit}>
-                <Grid container>
-                  <Grid item>
-                    <TextField
-                      required
-                      type="text"
-                      id="outlined-required"
-                      label="First Name"
-                      defaultValue=""
-                      onChange={(e) =>
-                        setMessageState({
-                          ...messageState,
-                          firstName: e.target.value,
-                        })
-                      }
-                    />
+          <Grid container item>
+            <Card>
+              <CardContent>
+                <form onSubmit={OnSubmit}>
+                  <Grid container>
+                    <Grid item>
+                      <TextField
+                        required
+                        type="text"
+                        id="outlined-required"
+                        label="First Name"
+                        defaultValue=""
+                        onChange={(e) =>
+                          setMessageState({
+                            ...messageState,
+                            firstName: e.target.value,
+                          })
+                        }
+                      />
+                    </Grid>
+                    <Grid item>
+                      <TextField
+                        label="Last Name"
+                        defaultValue=""
+                        onChange={(e) =>
+                          setMessageState({
+                            ...messageState,
+                            lastName: e.target.value,
+                          })
+                        }
+                      />
+                    </Grid>
+                    <Grid item>
+                      <TextField
+                        required
+                        type="number"
+                        id="outlined-required"
+                        label="Phone Number"
+                        defaultValue=""
+                        onChange={(e) =>
+                          setMessageState({
+                            ...messageState,
+                            phoneNumber: e.target.value,
+                          })
+                        }
+                      />
+                    </Grid>
+                    <Grid item>
+                      <TextField
+                        required
+                        type="email"
+                        id="outlined-password-input"
+                        label="Email"
+                        defaultValue=""
+                        onChange={(e) =>
+                          setMessageState({
+                            ...messageState,
+                            email: e.target.value,
+                          })
+                        }
+                      />
+                    </Grid>
+                    <Grid item>
+                      <TextField
+                        id="standard-multiline-static"
+                        label="Message"
+                        multiline
+                        rows={4}
+                        defaultValue=""
+                        variant="standard"
+                        onChange={(e) =>
+                          setMessageState({
+                            ...messageState,
+                            message: e.target.value,
+                          })
+                        }
+                      />
+                    </Grid>
+                    <Grid item>
+                      <Button type="submit" variant="contained" fullWidth>
+                        Submit
+                      </Button>
+                    </Grid>
                   </Grid>
-                  <Grid item>
-                    <TextField
-                      label="Last Name"
-                      defaultValue=""
-                      onChange={(e) =>
-                        setMessageState({
-                          ...messageState,
-                          lastName: e.target.value,
-                        })
-                      }
-                    />
-                  </Grid>
-                  <Grid item>
-                    <TextField
-                      required
-                      type="number"
-                      id="outlined-required"
-                      label="Phone Number"
-                      defaultValue=""
-                      onChange={(e) =>
-                        setMessageState({
-                          ...messageState,
-                          phoneNumber: e.target.value,
-                        })
-                      }
-                    />
-                  </Grid>
-                  <Grid item>
-                    <TextField
-                      required
-                      type="email"
-                      id="outlined-password-input"
-                      label="Email"
-                      defaultValue=""
-                      onChange={(e) =>
-                        setMessageState({
-                          ...messageState,
-                          email: e.target.value,
-                        })
-                      }
-                    />
-                  </Grid>
-                  <Grid item>
-                    <TextField
-                      id="standard-multiline-static"
-                      label="Message"
-                      multiline
-                      rows={4}
-                      defaultValue=""
-                      variant="standard"
-                      onChange={(e) =>
-                        setMessageState({
-                          ...messageState,
-                          message: e.target.value,
-                        })
-                      }
-                    />
-                  </Grid>
-                  <Grid item>
-                    <Button type="submit" variant="contained" fullWidth>
-                      Submit
-                    </Button>
-                  </Grid>
-                </Grid>
-              </form>
-            </CardContent>
-            <CardContent />
-          </Card>
+                </form>
+              </CardContent>
+              <CardContent />
+            </Card>
           </Grid>
         </Grid>
       </Grid>

@@ -15,23 +15,20 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faMandalorian } from "@fortawesome/free-brands-svg-icons";
 
 function Navbar() {
-
   return (
     <AppBar position="static">
       <Grid container maxWidth="lx">
         <Typography variant="h3" component="h1">
           <FontAwesomeIcon icon={faMandalorian} />
         </Typography>
-        <Box spacing={5} sx={{ flexGrow: 1, display: { xs: "flex", md: "flex" } }}>
+        <Box
+          sx={{ flexGrow: 1, display: { xs: "flex", md: "flex" } }}
+        >
           <Typography variant="h4" component="h2">
             <Link to="/">Home</Link>
           </Typography>
-
           <Typography variant="h4" component="h2">
             <Link to="/Portfolio">Portfolio</Link>
-          </Typography>
-          <Typography variant="h4" component="h2">
-            <Link to="/Tech">Technologies</Link>
           </Typography>
           <Typography variant="h4" component="h2">
             <Link to="/Contact">Contact Me</Link>
