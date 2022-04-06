@@ -20,17 +20,25 @@ import { faMandalorian } from "@fortawesome/free-brands-svg-icons";
 function Navbar() {
 
   const [page, setPage] = useState();
-  const PAGES = ["Home", "Portfolio", "Contact"]
+  const PAGES = ["Home", "Portfolio", "Contact"];
+
+  const handleChange = (e, newValue) => {
+      setPage(newValue);
+  };
 
   return (
     <AppBar position="sticky" sx={{ background: "black" }}>
       <Toolbar>
         <Typography variant="h3" component="h1">          <FontAwesomeIcon icon={faMandalorian} />
         </Typography>
-        <Tabs sx={{ marginLeft: 'auto' }} textColor="inherit" value={page} onChange={(e, value) => setPage(value)} indicatorColor="secondary">
+        <Tabs sx={{ marginLeft: 'auto' }} textColor="inherit" value={0} indicatorColor="secondary">
           {
             PAGES.map((page, index) => (
-              <Tab key={index} label={page} />
+              <Tab key={index} label={page}>
+                <Link to={`/${page}`}>
+                {page}
+                </Link>
+              </Tab>
             ))
           }
         </Tabs>
