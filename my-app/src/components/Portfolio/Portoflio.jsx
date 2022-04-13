@@ -17,7 +17,6 @@ import Navbar from "../Navbar/Navbar";
 export default function Portoflio() {
   return (
     <div>
-      <Navbar />
       <Container>
         <Typography variant="h2" component="h1">
           Portoflio

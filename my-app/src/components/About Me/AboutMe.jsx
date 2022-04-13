@@ -28,7 +28,6 @@ import Navbar from "../Navbar/Navbar";
 function AboutMe() {
   return (
     <div>
-      <Navbar />
       <Container maxWidth="xlg">
         <Typography variant="h2" component="h1">
           About Me
