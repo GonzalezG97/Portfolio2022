@@ -29,8 +29,6 @@ function ContactMe() {
       <Typography variant="h2" component="h1">
         Contact Me
       </Typography>
-      <Container>
-        <Grid container>
           <Grid item>
             <Grid item>
               <div>
@@ -54,8 +52,6 @@ function ContactMe() {
               </div>
             </Grid>
           </Grid>
-        </Grid>
-      </Container>
     </Container>
   );
 }
