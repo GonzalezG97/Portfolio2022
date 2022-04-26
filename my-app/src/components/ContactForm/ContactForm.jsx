@@ -58,6 +58,7 @@ function ContactForm() {
                 required
                 type="number"
                 label="Phone Number"
+                onInput={ e => setMessageState({...messageState, phoneNumber: e.target.value})}
                 variant="outlined"
                 fullWidth
               />
@@ -68,6 +69,7 @@ function ContactForm() {
                 multiline
                 rows={4}
                 label="Message"
+                onInput={ e => setMessageState({...messageState, message: e.target.value})}
                 variant="outlined"
                 fullWidth
               />
