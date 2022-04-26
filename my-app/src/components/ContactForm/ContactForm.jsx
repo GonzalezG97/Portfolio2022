@@ -1,4 +1,4 @@
-import React from "react";
+import { React, useState } from "react";
 import Container from "@mui/material/Container";
 import Grid from "@mui/material/Grid";
 import Typography from "@mui/material/Typography";
@@ -11,7 +11,13 @@ function ContactForm() {
   const formId = process.env.REACT_APP_FORM_ID;
   const formSparkUrl = `https://submit-form.com/${formId}`;
 
-  
+  const [messageState, setMessageState] = useState({
+    firstName: "",
+    lastName: "",
+    phoneNumber: "",
+    email: "",
+    message: "",
+  });
 
   return (
     <Container>
