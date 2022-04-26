@@ -6,6 +6,7 @@ import Button from "@mui/material/Button";
 import TextField from "@mui/material/TextField";
 import { CardContent, Card } from "@mui/material";
 import axios from "axios";
+import ContactForm from "../ContactForm/ContactForm";
 
 function ContactMe() {
   const formId = process.env.REACT_APP_FORM_ID;
@@ -29,29 +30,30 @@ function ContactMe() {
       <Typography variant="h2" component="h1">
         Contact Me
       </Typography>
-          <Grid item>
-            <Grid item>
-              <div>
-                <Typography variant="h5" component="p">
-                  gustavoshadow13@gmail.com
-                </Typography>
-              </div>
-              <div>
-                <a href="https://github.com/GonzalezG97">
-                  <Typography variant="h5" component="p">
-                    Github
-                  </Typography>
-                </a>
-              </div>
-              <div>
-                <a href="https://www.linkedin.com/in/gustavo-gonzalez-00362215b/">
-                  <Typography variant="h5" component="p">
-                    Linkedin
-                  </Typography>
-                </a>
-              </div>
-            </Grid>
-          </Grid>
+      <Grid>
+        <Grid item>
+          <div>
+            <Typography variant="h5" component="p">
+              gustavoshadow13@gmail.com
+            </Typography>
+          </div>
+          <div>
+            <a href="https://github.com/GonzalezG97">
+              <Typography variant="h5" component="p">
+                Github
+              </Typography>
+            </a>
+          </div>
+          <div>
+            <a href="https://www.linkedin.com/in/gustavo-gonzalez-00362215b/">
+              <Typography variant="h5" component="p">
+                Linkedin
+              </Typography>
+            </a>
+          </div>
+        </Grid>
+      </Grid>
+      <ContactForm/>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             
     </Container>
   );
 }
