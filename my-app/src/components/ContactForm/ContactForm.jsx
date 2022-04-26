@@ -48,6 +48,7 @@ function ContactForm() {
                 required
                 type="email"
                 label="Email"
+                onInput={ e => setMessageState({...messageState, lastName: e.target.value})}
                 variant="outlined"
                 fullWidth
               />
