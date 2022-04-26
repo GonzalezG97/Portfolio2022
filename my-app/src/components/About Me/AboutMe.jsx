@@ -22,8 +22,6 @@ import {
   faCode,
   faCodeMerge,
 } from "@fortawesome/free-solid-svg-icons";
-import { useNavigate } from "react-router-dom";
-import Navbar from "../Navbar/Navbar";
 
 function AboutMe() {
   return (
