@@ -41,14 +41,14 @@ function ContactForm() {
               />
             </Grid>
             <Grid xs={12} sm={6} item>
-              <TextField label="Last Name" variant="outlined" fullWidth />
+              <TextField label="Last Name" variant="outlined" onInput={ e => setMessageState({...messageState, lastName: e.target.value})} fullWidth />
             </Grid>
             <Grid xs={12} item>
               <TextField
                 required
                 type="email"
                 label="Email"
-                onInput={ e => setMessageState({...messageState, lastName: e.target.value})}
+                onInput={ e => setMessageState({...messageState, email: e.target.value})}
                 variant="outlined"
                 fullWidth
               />
