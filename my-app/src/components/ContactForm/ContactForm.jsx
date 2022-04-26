@@ -9,8 +9,21 @@ function ContactForm() {
   return <Container>
     <Card>
       <CardContent>
-        <Grid>
-          
+        <Grid container spacing={1}>
+
+
+          <Grid item>
+            <TextField required label="First Name" variant="outlined"/>
+          </Grid>
+          <Grid item>
+            <TextField required label="Last Name" variant="outlined"/>
+          </Grid>
+          <Grid item>
+            <TextField required type="email" label="Email" variant="outlined"/>
+          </Grid>
+
+
+
         </Grid>
 
       </CardContent>
