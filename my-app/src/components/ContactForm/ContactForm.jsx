@@ -24,6 +24,9 @@ function ContactForm() {
           <Grid item>
             <TextField required type="number" label="Phone Number" variant="outlined"/>
           </Grid>
+          <Grid item>
+            <TextField type="Message" label="Phone Number" variant="outlined"/>
+          </Grid>
 
 
         </Grid>
