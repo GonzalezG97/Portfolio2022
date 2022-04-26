@@ -18,12 +18,18 @@ function ContactForm() {
     email: "",
     message: "",
   });
+  
+  const OnSubmit = async (e) => {
+    e.preventDefault();
+    axios.post(formSparkUrl, { messageState });
+  };
+
 
   return (
     <Container>
       <Card>
         <CardContent>
-          <form>
+          <form onSubmit={OnSubmit}>
           <Grid container spacing={1}>
             <Grid xs={12} sm={6} item>
               <TextField
