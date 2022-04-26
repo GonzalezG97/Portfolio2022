@@ -9,24 +9,9 @@ import axios from "axios";
 import ContactForm from "../ContactForm/ContactForm";
 
 function ContactMe() {
-  const formId = process.env.REACT_APP_FORM_ID;
-  const formSparkUrl = `https://submit-form.com/${formId}`;
-
-  const OnSubmit = async (e) => {
-    e.preventDefault();
-    axios.post(formSparkUrl, { messageState });
-  };
-
-  const [messageState, setMessageState] = useState({
-    firstName: "",
-    lastName: "",
-    phoneNumber: "",
-    email: "",
-    message: "",
-  });
 
   return (
-    <Container maxWidth="lg">
+    <Container maxWidth="xlg">
       <Typography variant="h2" component="h1">
         Contact Me
       </Typography>
