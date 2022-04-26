@@ -12,20 +12,20 @@ function ContactForm() {
         <Grid container spacing={1}>
 
 
-          <Grid item>
+          <Grid xs={12} sm={6} item>
             <TextField required label="First Name" variant="outlined"/>
           </Grid>
-          <Grid item>
+          <Grid xs={12} sm={6} item>
             <TextField label="Last Name" variant="outlined"/>
           </Grid>
-          <Grid item>
+          <Grid xs={12} sm={6} item>
             <TextField required type="email" label="Email" variant="outlined"/>
           </Grid>
-          <Grid item>
+          <Grid xs={12} sm={6} item>
             <TextField required type="number" label="Phone Number" variant="outlined"/>
           </Grid>
-          <Grid item>
-            <TextField type="Message" label="Phone Number" variant="outlined"/>
+          <Grid xs={12} sm={6} item>
+            <TextField type="Message" label="Message" variant="outlined"/>
           </Grid>
 
 
