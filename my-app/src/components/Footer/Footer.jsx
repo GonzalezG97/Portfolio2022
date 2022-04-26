@@ -5,7 +5,7 @@ import Button from "@mui/material/Button";
 import Grid from "@mui/material/Grid";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCopyright } from "@fortawesome/free-solid-svg-icons";
-import { faLinkedin } from "@fortawesome/free-brands-svg-icons";
+import { faLinkedin, faGithub } from "@fortawesome/free-brands-svg-icons";
 
 function Footer() {
   return (
@@ -21,10 +21,19 @@ function Footer() {
             <FontAwesomeIcon icon={faCopyright} /> 2022
           </Typography>
         </Grid>
-        <Grid>
+        <Grid container rowSpacing={1}>
           <Grid item>
-              <Button>
+              <Button onClick={() => {
+            window.open('https://www.linkedin.com/in/gustavo-gonzalez-00362215b/')
+          }}>
                 <FontAwesomeIcon icon={faLinkedin} />
+              </Button>
+          </Grid>
+          <Grid item>
+              <Button onClick={() => {
+            window.open('https://github.com/GonzalezG97')
+          }}>
+                <FontAwesomeIcon icon={faGithub} />
               </Button>
           </Grid>
         </Grid>
