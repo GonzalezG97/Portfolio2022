@@ -16,12 +16,14 @@ function ContactForm() {
             <TextField required label="First Name" variant="outlined"/>
           </Grid>
           <Grid item>
-            <TextField required label="Last Name" variant="outlined"/>
+            <TextField label="Last Name" variant="outlined"/>
           </Grid>
           <Grid item>
             <TextField required type="email" label="Email" variant="outlined"/>
           </Grid>
-
+          <Grid item>
+            <TextField required type="number" label="Phone Number" variant="outlined"/>
+          </Grid>
 
 
         </Grid>
