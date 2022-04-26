@@ -19,7 +19,7 @@ function ContactForm() {
     message: "",
   });
   
-  const OnSubmit = async (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
     axios.post(formSparkUrl, { messageState });
   };
@@ -29,12 +29,13 @@ function ContactForm() {
     <Container>
       <Card>
         <CardContent>
-          <form onSubmit={OnSubmit}>
+          <form onSubmit={handleSubmit}>
           <Grid container spacing={1}>
             <Grid xs={12} sm={6} item>
               <TextField
                 required
                 label="First Name"
+                onInput={ e => setMessageState({...messageState, firstName: e.target.value})}
                 variant="outlined"
                 fullWidth
               />
