@@ -1,11 +1,7 @@
-import { React, useState } from "react";
+import React from "react";
 import Typography from "@mui/material/Typography";
 import Container from "@mui/material/Container";
 import Grid from "@mui/material/Grid";
-import Button from "@mui/material/Button";
-import TextField from "@mui/material/TextField";
-import { CardContent, Card } from "@mui/material";
-import axios from "axios";
 import ContactForm from "../ContactForm/ContactForm";
 
 function ContactMe() {
