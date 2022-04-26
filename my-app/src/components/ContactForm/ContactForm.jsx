@@ -7,38 +7,67 @@ import TextField from "@mui/material/TextField";
 import Button from "@mui/material/Button";
 
 function ContactForm() {
-  return <Container>
-    <Card>
-      <CardContent>
-        <Grid container spacing={1}>
-
-
-          <Grid xs={12} sm={6} item>
-            <TextField required label="First Name" variant="outlined"/>
+  return (
+    <Container>
+      <Card>
+        <CardContent>
+          <form>
+          <Grid container spacing={1}>
+            <Grid xs={12} sm={6} item>
+              <TextField
+                required
+                label="First Name"
+                variant="outlined"
+                fullWidth
+              />
+            </Grid>
+            <Grid xs={12} sm={6} item>
+              <TextField label="Last Name" variant="outlined" fullWidth />
+            </Grid>
+            <Grid xs={12} item>
+              <TextField
+                required
+                type="email"
+                label="Email"
+                variant="outlined"
+                fullWidth
+              />
+            </Grid>
+            <Grid xs={12} item>
+              <TextField
+                required
+                type="number"
+                label="Phone Number"
+                variant="outlined"
+                fullWidth
+              />
+            </Grid>
+            <Grid xs={12} item>
+              <TextField
+                type="Message"
+                multiline
+                rows={4}
+                label="Message"
+                variant="outlined"
+                fullWidth
+              />
+            </Grid>
+            <Grid xs={12} item>
+              <Button
+                type="submit"
+                variant="contained"
+                color="primary"
+                fullWidth
+              >
+                Submit
+              </Button>
+            </Grid>
           </Grid>
-          <Grid xs={12} sm={6} item>
-            <TextField label="Last Name" variant="outlined"/>
-          </Grid>
-          <Grid xs={12} sm={6} item>
-            <TextField required type="email" label="Email" variant="outlined"/>
-          </Grid>
-          <Grid xs={12} sm={6} item>
-            <TextField required type="number" label="Phone Number" variant="outlined"/>
-          </Grid>
-          <Grid xs={12} sm={6} item>
-            <TextField type="Message" multiline rows={3} label="Message" variant="outlined"/>
-          </Grid>
-          <Grid xs={12} sm={6} item>
-            <Button>
-              Submit
-            </Button>
-          </Grid>
-
-        </Grid>
-
-      </CardContent>
-    </Card>
-  </Container>;
+          </form>
+        </CardContent>
+      </Card>
+    </Container>
+  );
 }
 
 export default ContactForm;
