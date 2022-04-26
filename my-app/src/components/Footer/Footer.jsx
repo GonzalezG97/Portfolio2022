@@ -8,7 +8,9 @@ function Footer() {
     <Container>
         <Grid>
             <Grid item>
+                <Typography variant="h6" component="h1">
                 Built with React and MaterialUI
+                </Typography>
             </Grid>
         </Grid>
     </Container>
