@@ -4,6 +4,7 @@ import Grid from "@mui/material/Grid";
 import Typography from "@mui/material/Typography";
 import { CardContent, Card } from "@mui/material";
 import TextField from "@mui/material/TextField";
+import Button from "@mui/material/Button";
 
 function ContactForm() {
   return <Container>
@@ -25,9 +26,13 @@ function ContactForm() {
             <TextField required type="number" label="Phone Number" variant="outlined"/>
           </Grid>
           <Grid xs={12} sm={6} item>
-            <TextField type="Message" label="Message" variant="outlined"/>
+            <TextField type="Message" multiline rows={3} label="Message" variant="outlined"/>
           </Grid>
-
+          <Grid xs={12} sm={6} item>
+            <Button>
+              Submit
+            </Button>
+          </Grid>
 
         </Grid>
 
