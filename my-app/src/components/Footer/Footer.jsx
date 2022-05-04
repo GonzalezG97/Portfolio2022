@@ -10,11 +10,9 @@ import { faLinkedin, faGithub } from "@fortawesome/free-brands-svg-icons";
 
 function Footer() {
   return (
-    
-      <Container maxWidth="xxlg">
-          <Box sx={{ height: '30vh', width: '100'}}>
-
-        <Grid alignItems="center">
+    <Container maxWidth="xxlg">
+      <Box sx={{ height: "32vh", width: "100" }}>
+        <Grid direction="column" justifyContent="center">
           <Grid item>
             <Typography variant="h6" component="h1">
               Built with ReactJs and MaterialUI
@@ -48,9 +46,8 @@ function Footer() {
             </Grid>
           </Grid>
         </Grid>
-          </Box>
-      </Container>
-    
+      </Box>
+    </Container>
   );
 }
 

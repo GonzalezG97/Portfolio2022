@@ -23,6 +23,7 @@ export default function Portoflio() {
         </Typography>
       </Container>
       <Grid container justifyContent="center" spacing={2}>
+      <Grid container item justifyContent="center" spacing={2}>
         {/* Wandering Adventure */}
         <Grid item>
           <Card sx={{ maxWidth: 345 }}>
@@ -148,29 +149,36 @@ export default function Portoflio() {
             </CardActions>
           </Card>
         </Grid>
-        {/* <Grid item>
-        <Card sx={{ maxWidth: 345 }}>
-          <CardMedia
-            component="img"
-            alt="green iguana"
-            height="140"
-            image="/static/images/cards/contemplative-reptile.jpg"
-          />
-          <CardContent>
-            <Typography gutterBottom variant="h5" component="div">
-              Lizard
-            </Typography>
-            <Typography variant="body2" color="text.secondary">
-              Lizards are a widespread group of squamate reptiles, with over
-              6,000 species, ranging across all continents except Antarctica
-            </Typography>
-          </CardContent>
-          <CardActions>
-            <Button size="small">Share</Button>
-            <Button size="small">Learn More</Button>
-          </CardActions>
-        </Card>
-      </Grid> */}
+      </Grid>
+        <Grid container item justifyContent="center" spacing={2}>
+        <Grid item>
+          <Card sx={{ maxWidth: 345 }}>
+            <CardMedia
+              component="img"
+              alt="Wanderting Adventure"
+              image="https://pro2-bar-s3-cdn-cf1.myportfolio.com/000909172f3cfec3f44bf971f9bfe486/c2a78af4-0920-48f1-9075-74d4e70bcd2f_car_202x158.png?h=2d924768f1f2722149817b3e25befe89"
+            />
+            <CardContent >
+              <Typography gutterBottom variant="h5" component="div">
+                Check out my Github!
+              </Typography>
+            </CardContent>
+            <CardActions>
+              <Button
+                onClick={() => {
+                  window.open(
+                    "https://github.com/GonzalezG97",
+                    "_blank"
+                  );
+                }}
+                size="small"
+              >
+                Github
+              </Button>
+            </CardActions>
+          </Card>
+        </Grid>
+        </Grid>
       </Grid>
     </div>
   );
