@@ -23,14 +23,14 @@ function ContactMe() {
           <div>
             <a href="https://github.com/GonzalezG97">
               <Typography variant="h5" component="p">
-                Github
+                GitHub
               </Typography>
             </a>
           </div>
           <div>
             <a href="https://www.linkedin.com/in/gustavo-gonzalez-00362215b/">
               <Typography variant="h5" component="p">
-                Linkedin
+                LinkedIn
               </Typography>
             </a>
           </div>
